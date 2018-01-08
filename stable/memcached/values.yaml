@@ -24,7 +24,7 @@ memcached:
   ## ref: https://github.com/memcached/memcached/wiki/ConfiguringServer#commandline-arguments
   ##
   maxItemMemory: 64
-  #maxItemSize: 1m  # Maximum size for a single object
+  maxItemSize: 1m
   verbosity: v
   extendedOptions: modern
 
