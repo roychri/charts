@@ -46,6 +46,7 @@ The following tables lists the configurable parameters of the Memcached chart an
 | `imagePullPolicy`         | Image pull policy               | `Always` if `imageTag` is `latest`, else `IfNotPresent` |
 | `memcached.verbosity`     | Verbosity level (v, vv, or vvv) | Un-set.                                                 |
 | `memcached.maxItemMemory` | Max memory for items (in MB)    | `64`                                                    |
+| `memcached.maxItemSize  ` | Max size of a single object     | `1m`                                                    |
 
 The above parameters map to `memcached` params. For more information please refer to the [Memcached documentation](https://github.com/memcached/memcached/wiki/ConfiguringServer).
 

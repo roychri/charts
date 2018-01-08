@@ -44,6 +44,10 @@ spec:
         command:
         - memcached
         - -m {{ .Values.memcached.maxItemMemory  }}
+        {{- if .Values.memcached.maxItemSize }}
+        - -I
+        - {{ .Values.memcached.maxItemSize }}
+        {{- end }}
         {{- if .Values.memcached.extendedOptions }}
         - -o
         - {{ .Values.memcached.extendedOptions }}
